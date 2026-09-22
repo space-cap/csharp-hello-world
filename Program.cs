@@ -12,13 +12,17 @@ var app = builder.Build();
 // 2. HTTP 요청 파이프라인 (미들웨어)
 app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
 
+// 정적 파일 서빙 (wwwroot/index.html 기본 페이지)
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.UseAuthorization();
 
 // 3. 컨트롤러 라우팅 매핑
 app.MapControllers();
 
-// 루트(/) 접속 시 API 사용 가이드 및 엔드포인트 목록 안내
-app.MapGet("/", () => Results.Ok(new
+// 시스템 상태 및 API 가이드 정보 엔드포인트
+app.MapGet("/api/info", () => Results.Ok(new
 {
     service = "C# ASP.NET Core Layered API",
     status = "Healthy",
