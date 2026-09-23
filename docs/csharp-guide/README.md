@@ -54,6 +54,17 @@
    - JWT 토큰 기반 인증 및 Policy 기반 인가(Authorization)
    - 단위 테스트(xUnit, Moq) 및 통합 테스트(`WebApplicationFactory`)
    - 구조화된 로깅(Serilog), 관측성(OpenTelemetry), Docker 컨테이너 패키징
+4. [04. C# ASP.NET Core 무료 클라우드 배포 가이드](../free-deployment-guide.md)
+   - Render.com 및 Koyeb 무료 호스팅 플랫폼 비교
+---
+
+### 🎁 [Appendix] 초보자 실전 부록 & 워크북
+1. [📋 실무 치트시트 & 복붙 코드 템플릿](../csharp-cheatsheet.md)
+   - REST Controller, Service/Interface, DTO, LINQ 10선, appsettings 읽기 패턴
+2. [🚨 자주 겪는 에러 & 트러블슈팅 FAQ](../troubleshooting-faq.md)
+   - 파일 잠금 에러(MSB3026), 포트 충돌, CORS 오류, CS0826 배열 추론 해결법
+3. [🛠️ 단계별 실습 워크북 (부서 관리 CRUD 완성하기)](../hands-on-tutorial.md)
+   - Entity ➔ DTO ➔ Service ➔ Controller ➔ DI 바닥부터 직접 구현하는 실습 가이드
 
 ---
 
